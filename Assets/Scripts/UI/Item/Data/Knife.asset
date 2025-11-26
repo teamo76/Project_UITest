@@ -10,5 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e1f31fc351d6d64297979e5e62e91ee, type: 3}
-  m_Name: Item
+  m_Name: Knife
   m_EditorClassIdentifier: 
+  weaponName: "\uC2DD\uCE7C"
+  description: "\uC774\uAC8C \uCE7C\uC774\uB77C\uACE0 \uD560 \uC218 \uC788\uB294
+    \uAC78\uAE4C?"
+  type: 0
+  icon: {fileID: 0}
+  canStack: 0
+  maxStackAmount: 0
+  statData:
+  - Type: 0
+    value: 5
