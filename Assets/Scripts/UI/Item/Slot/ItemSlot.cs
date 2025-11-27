@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ItemSlot : MonoBehaviour
 {//아이템 정보 연결, 장착여부 ,  아이템 순서 , 지워지기 , 채워지기 , 
-    public ItemData Item;   //강제로 넣어놔서 지금은 적용 안됨
+    public ItemData Item;   
 
     public Button button;
     public Image icon;

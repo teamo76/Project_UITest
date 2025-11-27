@@ -40,4 +40,7 @@ public class ItemData : ScriptableObject
 
     [Header("Stat")]
     public ItemDataStat[] statData;
+    [Header("Equip")]
+    public GameObject equipPrf;
+
 }

@@ -22,6 +22,8 @@ public class UIInventory : MonoBehaviour
 
     ItemData selectedItem;
     int selectedItemIndex = 0;
+
+    int curEquipIndex;
     private void Start()
     {
         infoWindow.SetActive(false);
@@ -67,11 +69,11 @@ public class UIInventory : MonoBehaviour
         for (int i = 0; i < selectedItem.statData.Length; i++)
         {
             selectedStatName.text += selectedItem.statData[i].Type.ToString() + "\n";
-        selectedStatValue.text += selectedItem.statData[i].value.ToString() + "\n";
+            selectedStatValue.text += selectedItem.statData[i].value.ToString() + "\n";
 
         }
-        equipButton.SetActive(true);
-        unEquipButton.SetActive(true);
+        equipButton.SetActive(!itemSlots[index].equipped);
+        unEquipButton.SetActive(itemSlots[index].equipped);
         deleteButton.SetActive(true);
         infoWindow.SetActive(true);
     }
@@ -150,5 +152,35 @@ public class UIInventory : MonoBehaviour
             ClearSelecteditemWindow();
         }
         UiUpdate();
+    }
+    public void OnEquipButton()
+    {
+        if (itemSlots[curEquipIndex].equipped)
+        {
+            UnEquip(curEquipIndex);
+        }
+
+        itemSlots[selectedItemIndex].equipped = true;
+        curEquipIndex = selectedItemIndex;
+        EquipmentManager.Instance.EquipNew(selectedItem);
+        UiUpdate();
+
+        OnSelectItem(selectedItemIndex);
+    }
+
+    void UnEquip(int index)
+    {
+        itemSlots[index].equipped = false;
+        EquipmentManager.Instance.UnEquip();
+        UiUpdate();
+
+        if(selectedItemIndex == index)
+        {
+            OnSelectItem(selectedItemIndex);
+        }
+    }
+    public void OnUnEquipButton()
+    {
+        UnEquip(selectedItemIndex);
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7572122891736967092}
   - component: {fileID: 3129553303089696310}
   - component: {fileID: 3256892238566794345}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 7667064465753443004}
   - component: {fileID: 8218952969647889709}
   - component: {fileID: 5201270463125092542}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ' QuantityText'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 4462375693310211436}
   - component: {fileID: 4789627032752057041}
   - component: {fileID: 1430152569348324357}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ItemSlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
