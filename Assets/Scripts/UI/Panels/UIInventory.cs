@@ -41,6 +41,7 @@ public class UIInventory : MonoBehaviour
         }
         ClearSelecteditemWindow();
     }
+    
     void ClearSelecteditemWindow()
     {
         selectedItemName.text = string.Empty;
@@ -52,6 +53,7 @@ public class UIInventory : MonoBehaviour
         unEquipButton.SetActive(false);
         deleteButton.SetActive(false);
     }
+    //클릭한 아이템의 정보받아옴
     public void OnSelectItem(int index)
     {
        
@@ -100,7 +102,7 @@ public class UIInventory : MonoBehaviour
             return;
         }
         //없으면 삭제
-        
+        RemoveSelecteditem();
     }
     
     void UiUpdate()
