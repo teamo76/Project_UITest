@@ -10,7 +10,8 @@ public class EquipmentManager : MonoBehaviour
     public GameObject curWeaponObject;  //ItemPrf에 스크립트 장착 시 변경 
     public ItemData curWeaponData;
 
-    //private List<ItemData> equipedItems = new List<ItemData>();
+    //주석이 되어있는것은 나중에 여러개가 되었을 때를 위해 리스트로 만들어 놓음
+    //private List<ItemData> equipedItems = new List<ItemData>();   
     private void Awake()
     {
         Instance = this;
