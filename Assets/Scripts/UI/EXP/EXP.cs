@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 
-
+//PlayerCondition에서 받아와 경험치 관련 UI 만 띄우기
 public class EXP : MonoBehaviour
 {
  

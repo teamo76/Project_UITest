@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//장비의 장착관리 및 아이템 스탯적용 넘기기 
 public class EquipmentManager : MonoBehaviour
 {
     public static EquipmentManager Instance;

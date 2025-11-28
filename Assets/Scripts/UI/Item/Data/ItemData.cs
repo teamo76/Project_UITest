@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//ItemData 구성 ScriptableObject(SO)
 public enum ItemType
 {
     Equiable,

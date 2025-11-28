@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+//Level에 관한 UI만 띄우기
 public class Level : MonoBehaviour
 {
     public TextMeshProUGUI levelText;

@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//Player의 능력치에 관한 것 관리
 public class PlayerStats : MonoBehaviour
 {
     [SerializeField] private float atk = 5f;
@@ -14,6 +14,10 @@ public class PlayerStats : MonoBehaviour
     public float Def => def;
     public float Health => health;
     public float CriticalDamage => criticalDamage;
+
+    public string newName;
+    public string newJob;
+    public string newDescription;
 
     //리셋을 위한 값
     private float baseAtk;  

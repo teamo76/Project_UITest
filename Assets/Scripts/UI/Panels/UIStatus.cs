@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+//PlayerStat에서 받아온걸 UI만 띄울 것
 public class UIStatus : MonoBehaviour
 {
     public TextMeshProUGUI atkText;

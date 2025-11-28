@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+//PalyerCondition에서 받아와 UI만 띄우기
 public class Cash : MonoBehaviour
 {
     public TextMeshProUGUI moneyText;

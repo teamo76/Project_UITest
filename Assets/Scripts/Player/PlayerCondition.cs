@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//Player의 상태, 자산 관리
 public class PlayerCondition : MonoBehaviour
 {
     [SerializeField] private int money = 20000;

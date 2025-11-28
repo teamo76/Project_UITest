@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-//슬롯에 채워진 아이템 정보 띄우기, 효과 적용 등
+//슬롯에 채워진 아이템 정보 띄우기 아이템과 인벤토리에 관한 UI만 띄우기
 public class UIInventory : MonoBehaviour
 {
     [SerializeField] ItemData[] testItems;
